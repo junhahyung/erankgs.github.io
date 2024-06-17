@@ -184,7 +184,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">erankGS </h2>
-            <img src="./static/images/main_fig_v4_crop.png"
+            <img src="./static/images/erank_vis.png"
                  class="main figure"
                  alt="main figure"/>
       </div>
@@ -198,7 +198,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          3D content manipulation is an important computer vision task with many real-world applications (e.g., product design, cartoon generation, and 3D Avatar editing). Recently proposed 3D GANs can generate diverse photorealistic 3D-aware contents using Neural Radiance fields (NeRF). However, manipulation of NeRF still remains a challenging problem since the visual quality tends to degrade after manipulation and suboptimal control handles such as 2D semantic maps are used for manipulations. While text-guided manipulations have shown potential in 3D editing, such approaches often lack locality. To overcome these problems, we propose Local Editing NeRF (LENeRF), which only requires text inputs for fine-grained and localized manipulation. Specifically, we present three add-on modules of LENeRF, the Latent Residual Mapper, the Attention Field Network, and the Deformation Network, which are jointly used for local manipulations of 3D features by estimating a 3D attention field. The 3D attention field is learned in an unsupervised way, by distilling the zero-shot mask generation capability of CLIP to the 3D space with multi-view guidance. We conduct diverse experiments and thorough evaluations both quantitatively and qualitatively.
+          3D reconstruction from multi-view images is one of the fundamental challenges in computer vision and graphics.
+Recently, 3D Gaussian Splatting (3DGS) has emerged as a promising technique capable of real-time rendering with high-quality 3D reconstruction. This method utilizes 3D Gaussian representation and tile-based splatting techniques, bypassing the expensive neural field querying. Despite its potential, 3DGS encounters challenges, including needle-like artifacts, suboptimal geometries, and inaccurate normals, due to the Gaussians converging into anisotropic Gaussians with one dominant variance.
+We propose using effective rank analysis to examine the shape statistics of 3D Gaussian primitives, and identify the Gaussians indeed converge into needle-like shapes with the effective rank 1. To address this, we introduce effective rank as a regularization, which constrains the structure of the Gaussians. Our new regularization method enhances normal and geometry reconstruction while reducing needle-like artifacts. The approach can be integrated as an add-on module to other 3DGS variants, improving their quality without compromising visual fidelity.
           </p>
         </div>
       </div>
@@ -210,7 +212,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/watch?v=j_CZUnf52YM"
+          <iframe src="https://www.youtube.com/here!"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -356,13 +358,7 @@
 }</code></pre>
     -->
     <pre><code>
-@inproceedings{hyung2023local,
-  title     =   {Local 3D Editing via 3D Distillation of CLIP Knowledge},
-  author    =   {Hyung, Junha and Hwang, Sungwon and Kim, Daejin and Lee, Hyunji and Choo, Jaegul},
-  booktitle =   {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages     =   {12674--12684},
-  year      =   {2023}
-}
+@inproceedings{ }
     </code></pre>
   </div>
 </section>
@@ -372,7 +368,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/pdf/lenerf_paper.pdf">
+         href="./static/pdf/erankgs_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="" class="external-link" disabled>
